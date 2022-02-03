@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+.text1 {
+  color: #000;
+  background-color: #00f;
+  padding: 10px;
+  margin: 30px 0;
+  text-decoration:  none; /* | underline | line-through | overline; */
+  text-transform: capitalize; /* none | uppercase | lowercase | capitalize */
+  text-align: left; /* left | right | center | justify */
+  text-indent: 10%; /*значение | проценты | inherit*/
+  letter-spacing: 2px; /*значение | normal | inherit*/
+  word-spacing: 10px; /*значение | normal | inherit*/
+  text-shadow: 1px 1px 5px #fff; /*<смещение по x>, <смещение по y>, <радиус размытия>, <цвет>*/
+  white-space: normal; /*normal | nowrap | pre | pre-wrap*/
+
+  font-size: 30px;
+  line-height: 1.25;
+  font-weight: 400; /*100 | 200 | 300 | 400 | 500 | 600 | 700 |800 |  900*/
+  font-style: normal; /*normal | italic | oblique | initial | inherit*/
+  /* font-family: Lucida,'Times New R55oman', Arlial, serif; */
+  
+}
+
+.text1.normal {
+  letter-spacing: normal;
+}
+
+.class {
+  font-family: 'Cardo', serif;
+}
