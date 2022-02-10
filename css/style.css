@@ -1,35 +1,54 @@
-body{
-  background: #191919;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding-top: 20px;
+* {
   box-sizing: border-box;
-  letter-spacing: -1px;
 }
 
-[class*="box_"]{
-  display: inline-flex;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 20px solid #8F8F8F;
+.box {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  height: 300px;
+  background-color: #69474c;
+  /* padding: 50px; */
+  margin: 100px auto;
 }
-.box_1{
-  border-color: #714B67;
+
+.box__item {
+  font-size: 50px;
+  line-height: 100px;
+  color: #fff;
+  text-align: center;
+  width: 100px;
+  /* height: 100px; */
+  background-color: #2d9243;
+  margin: 15px;
 }
-.box_2{
-  position: relative;
+
+.box__item:first-child {
+  align-self: flex-start;
+  background-color: #9e1897;
 }
-.box_2::before{
-  content: "";
-  display: block;
-  position: absolute;
-  top: -20px;
-  right: 0;
-  width: 20px;
-  height: 50px;
-  border-radius: 10px;
-  background: #8F8F8F;
+
+.box__item:last-child {
+  align-self: stretch;
+  background-color: #3c2bd3;
+}
+
+.ord1 {
+  order: 1;
+}
+
+.ord2 {
+  order: 2;
+}
+.ord3 {
+  order: 3;
+}
+.ord4 {
+  order: 4;
+}
+.ord5 {
+  order: 5;
 }
