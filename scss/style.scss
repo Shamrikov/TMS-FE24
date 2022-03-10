@@ -1,0 +1,32 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.tabs-wrap {
+
+  .tabs__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+
+  .tab {
+    border: 2px solid #000;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  [name="tabs"] {
+    display: none;
+    &:checked + .tab {
+      display: flex;
+    }
+  }
+
+  [for*="tab"] {
+    padding: 20px;
+    font-size: 30px;
+  }
+}

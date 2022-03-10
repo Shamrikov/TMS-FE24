@@ -7,60 +7,39 @@
   <title>ActiveBox</title>
   <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@400;500;700;900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/bootstrap-grid.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="./fontawesome/css/all.css">
+  <link rel="stylesheet" href="./scss/style.css">
 </head>
 
 <body>
-
-  <div class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <div class="price-card">
-            <h3 class="price-card__title">Basic</h3>
-            <div class="price-card__price">$10</div>
-            <div class="price-card__text">Free for life</div>
-            <ul>
-              <li>1 gb of space</li>
-              <li>1 gb of space</li>
-              <li>1 gb of space</li>
-              <li>1 gb of space</li>
-              <li>1 gb of space</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="price-card price-card--active">
-            <h3 class="price-card__title">Optima</h3>
-            <div class="price-card__price">$10</div>
-            <div class="price-card__text">Free for life</div>
-            <ul>
-              <li>1 gb of space</li>
-              <li>1 gb of space</li>
-              <li>1 gb of space</li>
-              <li>1 gb of space</li>
-              <li>1 gb of space</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="price-card">
-            <h3 class="price-card__title">Pro</h3>
-            <div class="price-card__price">$10</div>
-            <div class="price-card__text">Free for life</div>
-            <ul>
-              <li>1 gb of space</li>
-              <li>1 gb of space</li>
-              <li>1 gb of space</li>
-              <li>1 gb of space</li>
-              <li>1 gb of space</li>
-            </ul>
-          </div>
+  <div class="container">
+    <div class="tabs-wrap">
+      <ul class="tabs__list">
+        <li><label for="tab1">Item 1</label></li>
+        <li><label for="tab2">Item 2</label></li>
+        <li><label for="tab3">Item 3</label></li>
+      </ul>
+      <div class="tabs-content">
+        <input id="tab1" type="radio" name="tabs" checked>
+        <div class="tab" style="background-color: aliceblue;">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure similique sit illo necessitatibus ea corporis
+          cumque cupiditate, provident praesentium voluptatibus ab rem vitae doloribus ipsa quae fugit deleniti
+          exercitationem? Minus.
         </div>
 
+        <input id="tab2" type="radio" name="tabs">
+        <div class="tab" style="background-color: rgb(26, 111, 185);">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure similique sit illo necessitatibus ea corporis
+          cumque cupiditate, provident praesentium voluptatibus ab rem vitae doloribus ipsa quae fugit deleniti
+          exercitationem? Minus.
+        </div>
+
+        <input id="tab3" type="radio" name="tabs">
+        <div class="tab" style="background-color: rgb(199, 19, 139);">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure similique sit illo necessitatibus ea corporis
+          cumque cupiditate, provident praesentium voluptatibus ab rem vitae doloribus ipsa quae fugit deleniti
+          exercitationem? Minus.
+        </div>
       </div>
     </div>
   </div>

@@ -1,0 +1,40 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.tabs-wrap .tabs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.tabs-wrap .tab {
+  border: 2px solid #000;
+  height: 300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.tabs-wrap [name="tabs"] {
+  display: none;
+}
+
+.tabs-wrap [name="tabs"]:checked + .tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tabs-wrap [for*="tab"] {
+  padding: 20px;
+  font-size: 30px;
+}
+/*# sourceMappingURL=style.css.map */
